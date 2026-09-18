@@ -1,15 +1,11 @@
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
-        Scanner userInput = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int number = userInput.nextInt();
-        // A number is a multiple of 100 if the remainder of dividing it by 100 is 0
-        if (number % 100 == 0){
-            System.out.println("multiple of 100");
-        } else {
-            System.out.println("not multiple of 100");
+        String[] airPlanes = {"Boeing 747", "Airbus A380", "Cessna 172", "Concorde", "Lockheed Martin F-22 Raptor"};
+        for (String plane : airPlanes) {
+            System.out.println(plane);
         }
-        userInput.close();
+        
+
     }
 }
